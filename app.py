@@ -16,7 +16,7 @@ from langdetect import detect
 OCR_DPI = 200
 TRANSLATE_LIMIT = 4500
 
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets["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"]
 translator = GoogleTranslator(source="auto", target="km")
 
 # ---------------------------------
@@ -157,3 +157,4 @@ if uploaded:
         )
 
         st.success("✅ Done – AI polished successfully")
+
